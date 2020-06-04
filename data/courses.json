@@ -1,0 +1,786 @@
+[
+  {
+    "code": "CSC104",
+    "name": "The Why and How of Computing",
+    "description": "A broad introduction to the field of computer science, intended for non-computer scientists. Topics include: history of computing; digital information representations; computer chip logic design; cryptography; social issues in computing; operating systems; problem solving and algorithms; a challenging programming introduction. This is a rigorous course intended to teach computer science, and will not teach the use of any particular software products. A robust understanding of modern computers and their use is assumed.",
+    "credits": "0.5",
+    "prerequisites": []
+  },
+  {
+    "code": "CSC108",
+    "name": "Introduction to Computer Programming",
+    "description": "Structure of computers; the computing environment. Programming in a language such as Python. Program structure: elementary data types, statements, control flow, functions, classes, objects, methods, fields. List: searching, sorting and complexity",
+    "credits": "0.5",
+    "prerequisites": []
+  },
+  {
+    "code": "CSC148",
+    "name": "Introduction to Computer Science",
+    "description": "Abstract data types and data structures for implementing them. Linked data structures. Encapsulation and information-hiding. Object-oriented programming. Specifications. Analyzing the efficiency of programs. Recursion. This course assumes programming experience in a language such as Python, C++, or Java, as provided by CSC108H5. Students who already have this background may consult the Computer Science faculty advisor for advice about skipping CSC108H5.",
+    "credits": "0.5",
+    "prerequisites": []
+  },
+  {
+    "code": "CSC207",
+    "name": "Software Design",
+    "description": "An introduction to software design and development concepts, methods, and tools using a statically-typed object-oriented programming language such as Java. Topics from: version control, build management, unit testing, refactoring, object-oriented design and development, design patterns, advanced IDE usage, regular expressions, and reflection. Representation of floating-point numbers and introduction to numerical computation.",
+    "credits": "0.5",
+    "prerequisites": ["CSC148"]
+  },
+  {
+    "code": "CSC209",
+    "name": "Software Tools and Systems Programming",
+    "description": "Software tools and development in a Unix/Linux environment, using a machine-oriented programming language (typically C). Core topics: software tools (shell utilities and make), processes and program execution, the memory model, system calls, file processing, interprocess communication (pipes and signals), and an introduction to concurrency, including multithreading.",
+    "credits": "0.5",
+    "prerequisites": ["CSC207"]
+  },    
+  {
+    "code": "CSC236",
+    "name": "Introduction to the Theory of Computation",
+    "description": "Mathematical induction; correctness proofs for iterative and recursive algorithms; recurrence equations and their solutions (including the Master Theorem); introduction to automata and formal languages.",
+    "credits": "0.5",
+    "prerequisites": ["CSC148", "MAT102"]
+  },
+  {
+    "code": "CSC258",
+    "name": "Computer Organization",
+    "description": "An introduction to computer organization and architecture, using a common CPU architecture (typically MIPS). Core topics: boolean expressions and logic gates, numerical representations, design and analysis of combinational and sequential circuits, the control unit and datapath, the memory hierarchy, instruction set architectures, and assembly programming. Students will design circuits and program using assembly.",
+    "credits": "0.5",
+    "prerequisites": ["CSC148", "MAT102"]
+  },
+  {
+    "code": "CSC263",
+    "name": "Data Structures and Analysis",
+    "description": "Algorithm analysis: worst-case, average-case, and amortized complexity. Standard abstract data types, such as graphs, dictionaries, priority queues and disjoint sets. A variety of data structures for implementing these abstract data types, such as balanced search trees, hashing, heaps and disjoint forests. Design, implementation and comparison of data structures. Introduction to lower bounds.",
+    "credits": "0.5",
+    "prerequisites": ["CSC207", "CSC236", ["STA107", "STA256"]]
+  },
+  {
+    "code": "CSC290",
+    "name": "Communication Skills for Computer Scientists",
+    "description": "Targeted instruction and significant practice in the communications required for careers in computer science. The curriculum covers written, oral and interpersonal communication. Students will hand in short pieces of writing each week, will make oral presentations several times in the semester, and will work together in simulated project meetings and other realistic scenarios of pair and small group interaction. This can be used to satisfy the writing requirement in CSC programs.",
+    "credits": "0.5",
+    "prerequisites": ["CSC148"]
+  },
+  {
+    "code": "CSC299",
+    "name": "Research Opportunity Program",
+    "description": "This courses provides a richly rewarding opportunity for students in their second year to work in the research project of a professor in return for 299Y course credit. Students enrolled have an opportunity to become involved in original research, learn research methods and share in the excitement and discovery of acquiring new knowledge. Participating faculty members post their project descriptions for the following summer and fall/winter sessions in early February and students are invited to apply in early March.",
+    "credits": "1",
+    "prerequisites": []
+  },
+  {
+    "code": "CSC300",
+    "name": "Computers and Society",
+    "description": "Privacy and Freedom of Information; recent Canadian legislation and reports. Computers and work; employment levels, quality of working life. Electronic fund transfer systems; transborder data flows. Computers and bureaucratization. Computers in the home; public awareness about computers. Robotics. Professionalism and the ethics of computers. The course is designed not only for science students, but also those in social sciences or humanities.",
+    "credits": "0.5",
+    "prerequisites": ["Any CSC half-course"]
+  },
+  {
+    "code": "CSC301",
+    "name": "Introduction to Software Engineering",
+    "description": "An introduction to agile development methods appropriate for medium-sized teams and rapidly-moving projects. Basic software development infrastructure; requirements elicitation and tracking; estimation and prioritization; teamwork skills; basic UML; design patterns and refactoring; security.",
+    "credits": "0.5",
+    "prerequisites": ["CSC209", "CSC290"]
+  },
+  {
+    "code": "CSC309",
+    "name": "Programming on the Web",
+    "description": "An introduction to software development on the web. Concepts underlying the development of programs that operate on the web; survey of technological alternatives; greater depth on some technologies. Operational concepts of the internet and the web, static client content, dynamic client content, dynamically served content, n-tiered architectures, web development processes, and security on the web. Assignments involve increasingly more complex web-based programs.",
+    "credits": "0.5",
+    "prerequisites": ["CSC209", "CSC290"]
+  },
+  {
+    "code": "CSC310",
+    "name": "Information Theory",
+    "description": "An introduction to reliable and accurate transmission of information. Entropy, lossless and lossy data compression, optimal compression, information channels, channel capacity, error-correcting codes, and digital fountain codes. Course concepts form the basis for practical applications such as ZIP and MP3 compression, channel coding for DSL lines, communication in deep space and to mobile devices, CDs and disk drives, the development of the Internet, as well as linguistics and human perception.",
+    "credits": "0.5",
+    "prerequisites": ["CSC148", "CSC290", "STA256", ["MAT223", "MAT240"]]
+  },
+  {
+    "code": "CSC318",
+    "name": "The Design of Interactive Computational Media",
+    "description": "User-centered design of interactive systems. Methodologies, principles, metaphors, task analysis, and other topics. Interdisciplinary design; the role of industrial design and the behavioural sciences. Interactive hardware and software; concepts from computer graphics. Classes of direct manipulation systems, extensible systems, rapid prototyping tools. Additional topics in interactive computational media. Students work on projects in interdisciplinary teams. Enrolment limited, but non-computer scientists welcome.",
+    "credits": "0.5",
+    "prerequisites": ["Any CSC half-course", "CGPA 3.0"]
+  },
+  {
+    "code": "CSC320",
+    "name": "Introduction to Visual Computing",
+    "description": "A unified introduction to image synthesis and image analysis aimed at students with an interest in computer graphics, computer vision or the visual arts.",
+    "credits": "0.5",
+    "prerequisites": ["CSC207", "CSC290", ["MAT223", "MAT240"]]
+  },
+  {
+    "code": "CSC321",
+    "name": "Introduction to Neural Networks and Machine Learning",
+    "description": "The first half of the course is about supervised learning for regression and classification problems and will include the perceptron learning procedure, backpropagation, and methods for ensuring good generalisation to new data. The second half of the course is about unsupervised learning methods that discover hidden causes and will include Kmeans, the EM algorithm, Boltzmann machines, and deep belief nets.",     
+    "credits": "0.5",
+    "prerequisites": ["CSC148", "CSC290", ["MAT134", "MAT135", "MAT137", "MAT157"], ["MAT223", "MAT240"], "STA256"]
+  },
+  {
+    "code": "CSC322",
+    "name": "Introduction to Algebraic Cryptography",
+    "description": "The course will take students on a journey through the methods of algebra and number theory in cryptography, from Euclid to Zero Knowledge Proofs. Topics include: block ciphers and the Advanced Encryption Standard (AES); algebraic and number-theoretic techniques and algorithms in cryptography, including methods for primality testing and factoring large numbers; encryption and digital signature systems based on RSA, factoring, elliptic curves and integer lattices; and zero-knowledge proofs. ",     
+    "credits": "0.5",
+    "prerequisites": ["MAT301", ["MAT224", "MAT240"]]
+  },
+  {
+    "code": "CSC324",
+    "name": "Principles of Programming Languages",
+    "description": "Major topics in the development of modern programming languages. Syntax specification, type systems, type inference, exception handling, information hiding, structural recursion, run-time storage management, and programming paradigms.",     
+    "credits": "0.5",
+    "prerequisites": ["CSC207", "CSC236", "CSC290"]
+  },
+  {
+    "code": "CSC333",
+    "name": "Forensic Computing",
+    "description": "Introduction to the tools and techniques of the digital detective. Electronic discovery of digital data, including field investigation methods of the computer crime scene. Focus on the computer science behind computer forensics, network forensics and data forensics. Forensic topics include: computer structure, data acquisition from storage media, file system analysis, network intrusion detection, electronic evidence, Canadian computer crime case law.",     
+    "credits": "0.5",
+    "prerequisites": ["FSC239", "CSC290"]
+  },
+  {
+    "code": "CSC338",
+    "name": "Numerical Methods",
+    "description": "Computational methods for solving numerical problems in science, engineering and business. Linear and non-linear equations, approximation, optimization, interpolation,integration and differentiation. The aim is to give students a basic understanding of floating-point arithmetic and the implementation of algorithms used to solve numericalproblems, as well as a familiarity with current numerical computing environments.",     
+    "credits": "0.5",
+    "prerequisites": ["CSC148", ["CSC290", "MAT202"], ["MAT134", "MAT135", "MAT137", "MAT157"], ["MAT223", "MAT240"], ["CSC263", "1.0 MAT credits at 200+ level"]]
+  },
+  {
+    "code": "CSC343",
+    "name": "Introduction to Databases",
+    "description": "Introduction to database management systems. The relational data model. Relational algebra. Querying and updating databases: the query language SQL. Application programming with SQL. Integrity constraints, normal forms, and database design. Elements of database system technology: query processing, transaction management.",     
+    "credits": "0.5",
+    "prerequisites": ["CSC263", "CSC290"]
+  },
+  {
+    "code": "CSC347",
+    "name": "Introduction to Information Security",
+    "description": "An investigation of many aspects of modern information security. Major topics cover: Techniques to identify and avoid common software development flaws which leave software vulnerable to crackers. Utilizing modern operating systems security features to deploy software in a protected environment. Common threats to networks and networked computers and tools to deal with them. Cryptography and the role it plays in software development, systems security and network security.",     
+    "credits": "0.5",
+    "prerequisites": ["CSC236", "CSC209", "CSC290"]
+  },
+  {
+    "code": "CSC358",
+    "name": "Principles of Computer Networks",
+    "description": "Introduction to computer networks and systems programming of networks. Basic understanding of computer networks and network protocols. Network hardware and software, routing, addressing, congestion control, reliable data transfer, and socket programming.",     
+    "credits": "0.5",
+    "prerequisites": ["CSC236", "CSC209", "CSC258", "CSC263", "CSC290"]
+  },
+  {
+    "code": "CSC363",
+    "name": "Computational Complexity and Computability",
+    "description": "Introduction to the theory of computability: Turing machines, Church’s thesis, computable and non-computable functions, recursive and recursively enumerable sets, reducibility. Introduction to complexity theory: models of computation, P, NP, polynomial time reducibility, NP-completeness, further topics in complexity theory. ",     
+    "credits": "0.5",
+    "prerequisites": [["MAT202", ["CSC290", ["CSC236", "CSC238"]]]]
+  },
+  {
+    "code": "CSC369",
+    "name": "Operation Systems",
+    "description": "Principles of operating systems. The operating system as a control program and as a resource allocator. Core topics: processes and threads, concurrency (synchronization, mutual exclusion, deadlock), processor, scheduling, memory management, file systems, and protection.",     
+    "credits": "0.5",
+    "prerequisites": ["CSC209", "CSC258", "CSC290"]
+  },
+  {
+    "code": "CSC373",
+    "name": "Algorithm Design and Analysis",
+    "description": "Standard algorithm design techniques: divide-and-conquer, greedy strategies, dynamic programming, linear programming, randomization, network flows, approximation algorithms and others (if time permits). Students will be expected to show good design principles and adequate skills at reasoning about the correctness and complexity of algorithms.",     
+    "credits": "0.5",
+    "prerequisites": ["CSC263", "CSC290"]
+  },
+  {
+    "code": "CSC384",
+    "name": "Introduction to Artificial Intelligence",
+    "description": "A broad introduction to the sub-disciplines of AI. Core topics: search methods, game playing and rule-based systems. Overview of: natural language understanding, knowledge representation, reasoning, planning, vision, robotics, learning and neural networks. ",     
+    "credits": "0.5",
+    "prerequisites": ["CSC290", "CSC324", "STA256"]
+  },
+  {
+    "code": "CSC398",
+    "name": "Topics in Computer Science",
+    "description": "Introduction to a topic of current interest in computer science intended for CSC majors and specialists. Content will vary from year to year.",     
+    "credits": "0.5",
+    "prerequisites": ["Minimum of 8.0 credits"]
+  },
+  {
+    "code": "CSC399",
+    "name": "Research Opportunity Program",
+    "description": "This course provides a richly rewarding opportunity for students in their third or fourth year to work in the research project of a professor in return for 399Y course credit. Students enrolled have an opportunity to become involved in original research, learn research methods and share in the excitement and discovery of acquiring new knowledge. Participating faculty members post their project descriptions for the following summer and fall/winter sessions in early February and students are invited to apply in early March.",     
+    "credits": "1.0",
+    "prerequisites": []
+  },
+  {
+    "code": "CSC404",
+    "name": "Video Game Design",
+    "description": "An introduction to the concepts and techniques for the design and development of electronic games. Topics include: game history, social issues and story elements. The software engineering, artificial intelligence and graphics elements for video games. Level and model design. Audio elements. Real-world aspects of the gaming industry, including the business of game development, design teams and game promotion.",     
+    "credits": "0.5",
+    "prerequisites": ["CSC290", ["CSC301", "CSC318", "CSC384", "CSC418"]]
+  },
+  {
+    "code": "CSC409",
+    "name": "Scalable Computing",
+    "description": "We investigate computation in the large – utilizing many CPUs with large amounts of memory, large storage and massive connectivity – to solve computationally complex problems involving big data, serving large collections of users, in high availability, global settings. Our investigation covers both theoretical techniques and current, applied tools used to scale applications on the desktop and in the cloud.",     
+    "credits": "0.5",
+    "prerequisites": ["CSC309", "CSC369", "CSC373"]
+  },
+  {
+    "code": "CSC411",
+    "name": "Machine Learning and Data Mining",
+    "description": "An introduction to methods for automated learning of relationships on the basis of empirical data. Classification and regression using nearest neighbour methods, decision trees, linear models, and neural networks. Clustering algorithms. Problems of overfitting and of assessing accuracy. Problems with handling large databases.",     
+    "credits": "0.5",
+    "prerequisites": ["CSC207", "CSC290", ["MAT134", "MAT135", "MAT137", "MAT157"], ["MAT223", "MAT240"], "STA256"]
+  },
+  {
+    "code": "CSC420",
+    "name": "Introduction to Image Understanding",
+    "description": "This class is an introduction to fundamental concepts in image understanding, the sub-discipline of artificial intelligence that tries to make the computers see. It will survey a variety of interesting vision problems and techniques. Specifically, the course will cover image formation, features, object and scene recognition and learning, multi-view geometry and video processing. It will also feature recognition with RGB-D data.",     
+    "credits": "0.5",
+    "prerequisites": ["CSC263", "CSC338"]
+  },
+  {
+    "code": "CSC422",
+    "name": "Cryptography and Computational Complexity",
+    "description": "A rigorous introduction to the theory of cryptography from the perspective of computational complexity. The relationship of cryptography to the P=NP question. As time permits, topics will be chosen from: (i) definitions of different kinds of pseudorandom generators, relationships between them, and ways of constructing them; (ii) secure sessions using shared private key cryptography and public key cryptography; (iii) signature schemes.",     
+    "credits": "0.5",
+    "prerequisites": ["CSC290", "CSC363"]
+  },
+  {
+    "code": "CSC423",
+    "name": "Computer Forensics",
+    "description": "Introduction to the digital investigation of electronic evidence. The computer as a crime scene and as a party to a criminal offence. Focus on network issues (intrusion detection, sniffer logs) and operating system issues (especially file system issues: hidden data, file metadata, deleted data). This course will build upon your background in operating systems theory and practice, and will introduce you to the tools and techniques of the computer forensic specialist in the Linux and Microsoft environments.",     
+    "credits": "0.5",
+    "prerequisites": ["CSC290", "CSC347", "CSC369", ["CSC333", "Permission of Professor"]]
+  },
+  {
+    "code": "CSC427",
+    "name": "Computer Security",
+    "description": "Network attacks and defenses, operating system vulnerabilities, application security (e-mail, Web, databases), viruses, spyware, social engineering attacks, privacy and digital rights management. The course will cover both attack techniques and defense mechanisms.",     
+    "credits": "0.5",
+    "prerequisites": ["CSC290", "CSC347", "CSC369"]
+  },
+  {
+    "code": "CSC428",
+    "name": "Human-Computer Interaction",
+    "description": "Understanding human behaviour as it applies to user interfaces: work activity analysis, observational techniques, questionnaire administration and unobtrusive measures. Operating parameters of the human cognitive system, task analysis and cognitive modelling techniques and their application to designing interfaces. ",     
+    "credits": "0.5",
+    "prerequisites": ["CSC318", "STA256", "CSC207"]
+  },
+  {
+    "code": "CSC448",
+    "name": "Formal Languages and Automata",
+    "description": "Regular, deterministic, context free, context sensitive, and recursively enumerable languages via generative grammars and corresponding automata (finite state machines, push down machines, and Turing machines). Topics include complexity bounds for recognition, language decision problems and operations on languages.",     
+    "credits": "0.5",
+    "prerequisites": ["CSC236", "CSC290", "CSC363"]
+  },
+  {
+    "code": "CSC454",
+    "name": "The Business of Software",
+    "description": "No description available.",     
+    "credits": "0.5",
+    "prerequisites": []
+  },
+  {
+    "code": "CSC458",
+    "name": "Computer Networks",
+    "description": "Computer networks with an emphasis on systems programming of real networks and applications. Computer network architectures, protocol layers, network programming, and performance analysis. Transmission media, encoding systems, switching, multiple access arbitration. Network routing, congestion control, flow control. Transport protocols, real-time, multicast, social networks.",     
+    "credits": "0.5",
+    "prerequisites": ["CSC209", "CSC258", "CSC263", "CSC290"]
+  },
+  {
+    "code": "CSC469",
+    "name": "Operating Systems Design and Implementation",
+    "description": "An in-depth exploration of the major components of operating systems with an emphasis on the techniques, algorithms, and structures used to implement these components in modern systems. Project-based study of process management, scheduling, memory management, file systems, and networking is used to build insight into the intricacies of a large concurrent system.",     
+    "credits": "0.5",
+    "prerequisites": ["CSC369", "CSC290"]
+  },
+  {
+    "code": "CSC488",
+    "name": "Compilers and Interpreters",
+    "description": "Compiler organization, compiler writing tools, use of regular expressions, finite automation and content-free grammars, scanning and parsing, runtine organization, semantic analysis, implementing the runtime model, storage allocation, code generation. ",     
+    "credits": "0.5",
+    "prerequisites": ["CSC258", "CSC263", "CSC290", "CSC324"]
+  },
+  {
+    "code": "CSC490",
+    "name": "Capstone Design Course",
+    "description": "This course gives students experience solving a substantial problem that may span several areas of Computer Science. Students will define the scope of the problem, develop a solution plan, produce a working implementation, and present their work using written, oral and (if suitable) video reports. Class time will focus on the project, but may include some lectures. The class will be small and highly interactive. ",     
+    "credits": "0.5",
+    "prerequisites": ["Permission of Instructor", "CSC290"]
+  },
+  {
+    "code": "CSC492",
+    "name": "Computer Science Implementation Project",
+    "description": "This course involves a significant implementation project in any area of Computer Science. The project may be undertaken individually or in small groups. The project is offered by arrangement with a Computer Science faculty member.",     
+    "credits": "0.5",
+    "prerequisites": ["3 300+ CSC half-courses", "Permission of Department", "CSC290"]
+  },
+  {
+    "code": "CSC493",
+    "name": "Computer Science Expository Work",
+    "description": "This course involves a significant literature search and expository work in any area of Computer Science. This work must be undertaken individually. It is offered by arrangement with a Computer Science faculty member.",     
+    "credits": "0.5",
+    "prerequisites": ["3 300+ CSC half-courses", "Permission of Department", "CSC290"]
+  },
+  {
+    "code": "MAT100",
+    "name": "Preparation for University Calculus",
+    "description": "This course is for students who wish to improve their skills in order to get ready for first year calculus at UTM. Topics include fractions, exponentials, logarithms, algebraic expressions, long division of polynomials, completing the square, solving equations and inequalities, functions and their graphs, inverse functions, trigonometric functions and word problems.",
+    "credits": "0.5",
+    "prerequisites": []
+  },
+  {
+    "code": "MAT102",
+    "name": "Introduction to Mathematical Proofs",
+    "description": "Understanding, using and developing precise expressions of mathematical ideas, including definitions and theorems. Set theory, logical statements and proofs, induction, topics chosen from combinatorics, elementary number theory, Euclidean geometry.",
+    "credits": "0.5",
+    "prerequisites": ["70% in Grade 12 Advanced Functions"]
+  },
+  {
+    "code": "MAT133",
+    "name": "Calculus and Linear Algebra for Commerce",
+    "description": "Mathematics of finance, matrices and linear equations. Review of differential calculus; applications. Integration and fundamental theorem; applications. Introduction to partial differentiation; applications. NOTE: This course cannot be used as the calculus prerequisite for any 200-level MAT or STA course, except in combination with MAT233H5.",
+    "credits": "1.0",
+    "prerequisites": ["70% in Grade 12 Advanced Functions"]
+  },
+  {
+    "code": "MAT134",
+    "name": "Calculus for Life Sciences",
+    "description": "Trigonometric functions. Limits, continuity. Techniques of differentiation and integration with applications to the life sciences. Extreme values and optimization. Graphing. The fundamental theorem of calculus. Introduction to sequences and series, power series. Introduction to discrete and continuous time modeling. Restricted to students in a Life Science Program",
+    "credits": "1.0",
+    "prerequisites": ["70% in Grade 12 Advanced Functions"]
+  },
+  {
+    "code": "MAT135",
+    "name": "Calculus I",
+    "description": "Trigonometric functions. Limits, continuity. Review of differential calculus; applications. Graphing, extreme values and optimization.",
+    "credits": "0.5",
+    "prerequisites": ["70% in Grade 12 Advancded Functions"]
+  },
+  {
+    "code": "MAT136",
+    "name": "Calculus II",
+    "description": "Integration and fundamental theorem; applications. Sequences and series. Power Series. Introduction to differential equations.",
+    "credits": "0.5",
+    "prerequisites": ["70% in Grade 12 Advancded Functions"]
+  },
+  {
+    "code": "MAT137",
+    "name": "Calculas",
+    "description": "A conceptual approach for students with a serious interest in mathematics. Geometric and physical intuition are emphasized but some attention is also given to the theoretical foundations of calculus. Material covers first a review of trigonometric functions followed by discussion of trigonometric identities. The basic concepts of calculus: limits and continuity, the mean value and inverse function theorem, the integral, the fundamental theorem, elementary transcendental functions, Taylor’s theorem, sequences and series, power series. ",
+    "credits": "1.0",
+    "prerequisites": ["70% in Grade 12 Advancded Functions"]
+  },
+  {
+    "code": "MAT157",
+    "name": "Analysis I",
+    "description": "A theoretical course in calculus for students with a very serious interest in mathematics; emphasizing proofs and techniques, as well as geometric and physical understanding. Trigonometric identities. Limits and continuity; least upper bounds, intermediate and extreme value theorems. Derivatives, mean value and inverse function theorems. Integrals; fundamental theorem; elementary transcendental functions. Techniques of integration. Taylor’s theorem; sequences and series; uniform convergence and power series. Note: MAT157Y5 will be accepted anywhere where MAT137Y5 is accepted.",
+    "credits": "0.5",
+    "prerequisites": ["70% in Grade 12 Advancded Functions"]
+  },
+  {
+    "code": "MAT202",
+    "name": "Introduction to Discrete Mathematics",
+    "description": "Mathematics derives its great power from its ability to formulate abstract concepts and techniques. In this course, students will be introduced to abstraction and its power through a study of topics from discrete mathematics. The topics covered will include: Sets, relations and functions; Basic counting techniques: subsets, permutations, finite sequences, inclusion-exclusion; Discrete probability: random variables paradoxes and surprises; Basic number theory: properties of the integers and the primes. The course will emphasize active participation of the students in discussion and written assignments.",
+    "credits": "0.5",
+    "prerequisites": ["MAT102", ["MAT134", "MAT135", "MAT137", "MAT157", "MAT233"]]
+  },
+  {
+    "code": "MAT212",
+    "name": "Modeling with Differential Equations in Life Sciences and Medicine",
+    "description": "Modeling with differential equations, applied to examples from Life Sciences and Medicine. Exponential and logistic growth of population, stability in first-order equations, higher order linear equations, forced oscillations, systems of first order equations, phase plane analysis, predator-prey models, modeling chemical reactions, modeling heart beat.",
+    "credits": "0.5",
+    "prerequisites": [["MAT233", ["MAT232", "MAT257"]]]
+  },
+  {
+    "code": "MAT223",
+    "name": "Linear Algebra I",
+    "description": "Systems of linear equations, matrix algebra, determinants. Vector geometry in R^2 and R^3 . Complex numbers. R^n : subspaces, linear independence, bases, dimension, column spaces, null spaces, rank and dimension formula. Orthogonality, orthonormal sets, Gram-Schmidt orthogonalization process, least square approximation. Linear transformations from R^n to R^m. The determinant, classical adjoint, Cramer’s rule. Eigenvalues, eigenvectors, eigenspaces, diagonalization. Function spaces and applications to a system of linear differential equations. The real and complex number fields.",
+    "credits": "0.5",
+    "prerequisites": ["Grade 12 Advanced Functions", "Grade 12 Calculas and Vectors"]
+  },
+  {
+    "code": "MAT224",
+    "name": "Linear Algebra II",
+    "description": "Abstract vector spaces: subspaces, dimension theory. Linear mappings: kernel, image, dimension theorem, isomorphisms, matrix of a linear transformation. Change of basis, invariant subspaces, direct sums, cyclic subspaces, Cayley-Hamilton theorem. Inner product spaces, orthogonal transformations, orthogonal diagonalization, quadratic forms, positive definite matrices. Complex operators: Hermitian, unitary and normal. Spectral Theorem. Isometries of R^2 and R^3 .",
+    "credits": "0.5",
+    "prerequisites": ["MAT102", "MAT223"]
+  },
+  {
+    "code": "MAT232",
+    "name": "Calculus of Several Variables",
+    "description": "Differential and integral calculus of several variables: partial differentiation, chain rule, extremal problems, Lagrange multipliers, classification of critical points. Multiple integrals, Green’s theorem and related topics.",
+    "credits": "0.5",
+    "prerequisites": [["MAT134", "MAT135", "MAT137"]]
+  },
+  {
+    "code": "MAT233",
+    "name": "Calculus of Several Variables",
+    "description": "Sequences and series, power series, Taylor series, trigonometric and inverse trigonometric functions and their use in integrations. Differential and integral calculus of several variables; partial differentiation, chain rule, extremal problems, Lagrange multipliers, classification of critical points. Multiple integrals, Green’s theorem and related topics.",
+    "credits": "0.5",
+    "prerequisites": [["MAT134", "MAT135", "MAT137"]]
+  },
+  {
+    "code": "MAT236",
+    "name": "Vector Calculus",
+    "description": "The implicit function theorem, vector fields. Transformations. Parametrized integrals. Line, surface and volume integrals. Theorems of Gauss and Stokes with applications.",
+    "credits": "0.5",
+    "prerequisites": ["MAT102", ["MAT223", "MAT240"], ["MAT232", "MAT233"]]
+  },
+  {
+    "code": "MAT240",
+    "name": "Algebra I",
+    "description": "A theoretical approach to Linear Algebra and its foundations, aimed at students with a serious interest in Mathematics. Topics to be covered: Vector spaces over arbitrary fields (including C and finite fields), linear equations and matrices, bases and linear independence, linear transformations, determinants, eigenvalues and eigenvectors, similarity, change of basis, diagonalization, the characteristic and minimal polynomials, the Cayley-Hamilton theorem. ",
+    "credits": "0.5",
+    "prerequisites": ["60% in MAT102"]
+  },
+  {
+    "code": "MAT244",
+    "name": "Differential Equations I",
+    "description": "Ordinary differential equations of the first and second order, existence and uniqueness; solutions by series and integrals; linear systems of first order; linearization of non-linear systems. Applications in life and physical sciences. Power series solutions, boundary value problems, Fourier series solutions, numerical methods.",
+    "credits": "0.5",
+    "prerequisites": [["MAT233", ["MAT232", "MAT257"]]]
+  },
+  {
+    "code": "MAT247",
+    "name": "Algebra II",
+    "description": "Continuation of MAT240H5. A theoretical approach to real and complex inner product spaces, isometries, orthogonal and unitary matrices and transformations. The adjoint. Hermitian and symmetric transformations. Spectral theorem for symmetric and normal transformations. Polar representation theorem. Primary decomposition theorem. Rational and Jordan canonical forms. Additional topics including dual spaces, quotient spaces, bilinear forms, quadratic surfaces, multilinear algebra.",
+    "credits": "0.5",
+    "prerequisites": ["MAT240"]
+  },
+  {
+    "code": "MAT257",
+    "name": "Analysis II",
+    "description": "A theoretical second course in calculus for students with a serious interest in mathematics. Topology of R^n; compactness, functions and continuity, extreme value theorem. Derivatives; inverse and implicit function theorems, maxima and minima, Lagrange multipliers. Integration; Fubini’s theorem, partitions of unity, change of variables. Differential forms. Manifolds in R^n; integration on manifolds; Stokes’ theorem for differential forms and classical versions",
+    "credits": "1.0",
+    "prerequisites": []
+  },
+  {
+    "code": "MAT299",
+    "name": "Research Opportunity Program",
+    "description": "This courses provides a richly rewarding opportunity for students in their second year to work in the research project of a professor in return for 299Y course credit. Students enrolled have an opportunity to become involved in original research, learn research methods and share in the excitement and discovery of acquiring new knowledge. Participating faculty members post their project descriptions for the following summer and fall/winter sessions in early February and students are invited to apply in early March.",
+    "credits": "1.0",
+    "prerequisites": ["Permission of Department"]
+  },
+  {
+    "code": "MAT301",
+    "name": "Groups and Symmetries",
+    "description": "Permutations and permutation groups. Linear groups. Abstract groups, homomorphisms, subgroups. Symmetry groups of regular polygons and platonic solids, wallpaper groups. Group actions, class formula. Cosets, Lagrange’s theorem. Normal subgroups, quotient groups. Classification of finitely generated Abelian Groups. Emphasis on examples and calculations.",
+    "credits": "0.5",
+    "prerequisites": ["MAT102", ["MAT202", "MAT224", "MAT240"]]
+  },
+  {
+    "code": "MAT302",
+    "name": "Introduction to Algebraic Cryptography",
+    "description": "The course will take students on a journey through the methods of algebra and number theory in cryptography, from Euclid to Zero Knowledge Proofs. Topics include: block ciphers and the Advanced Encryption Standard (AES); algebraic and number-theoretic techniques and algorithms in cryptography, including methods for primality testing and factoring large numbers; encryption and digital signature systems based on RSA, factoring, elliptic curves and integer lattices; and zero-knowledge proofs",
+    "credits": "0.5",
+    "prerequisites": [["MAT224", "MAT240"], "MAT301"]
+  },
+  {
+    "code": "MAT309",
+    "name": "Introduction to Mathematical Logic",
+    "description": "The nature of axioms, proofs and consistency. Introduction to the theory of recursive functions. Gödel’s incompleteness theorems and related results. This course emphasizes rigour.",
+    "credits": "0.5",
+    "prerequisites": ["MAT102", ["MAT134", "MAT135", "MAT137"], ["MAT224", "MAT240"]]
+  },
+  {
+    "code": "MAT311",
+    "name": "Partial Differential Equations",
+    "description": "Partial differential equations of applied mathematics, mathematical models of physical phenomena, basic methodology.",
+    "credits": "0.5",
+    "prerequisites": ["MAT102", ["MAT232", "MAT233"], ["MAT212", "MAT244"]]
+  },
+  {
+    "code": "MAT315",
+    "name": "Introduction to Number Theory",
+    "description": "Elementary topics in number theory such as: prime numbers; arithmetic with residues; Gaussian integers, quadratic reciprocity law, representation of numbers as sums of squares. ",
+    "credits": "0.5",
+    "prerequisites": ["MAT102", ["MAT134", "MAT135", "MAT137"], ["MAT224", "MAT240"], "MAT301"]
+  },
+  {
+    "code": "MAT332",
+    "name": "Introduction to Nonlinear Dynamics and Chaos",
+    "description": "Stability in nonlinear systems of differential equations, bifurcation theory, chaos, strange attractors, iteration of nonlinear mappings and fractals. This course will be geared towards students with interest in sciences. ",
+    "credits": "0.5",
+    "prerequisites": [["MAT232", "MAT233", "MAT257"], ["MAT223", "MAT240"],["MAT212", "MAT242", "MAT244"]]
+  },
+  {
+    "code": "MAT334",
+    "name": "Complex Variables",
+    "description": "Theory of functions of one complex variable: analytic and meromorphic functions; Cauchy’s theorem, residue calculus. Topics from: conformal mappings, analytic continuation, harmonic functions. ",
+    "credits": "0.5",
+    "prerequisites": ["MAT102", ["MAT232", "MAT233", "MAT257"]]
+  },
+  {
+    "code": "MAT337",
+    "name": "Introduction to Real Analysis",
+    "description": "The real numbers; Sequences and series; Functional limits; Topology in R^n; Differentiation and Integration; Power Series; Metric Spaces; Integrability and sets of measure zero. The course emphasizes rigour and theory.",
+    "credits": "0.5",
+    "prerequisites": ["MAT102", ["MAT224", "MAT240"], ["MAT212", "MAT244"], ["MAT232", "MAT233", "MAT257"]]
+  },
+  {
+    "code": "MAT344",
+    "name": "Introduction to Combinatorics",
+    "description": "Basic counting principles, generating functions, permutations with restrictions. Fundamentals of graph theory with algorithms; applications (including network",
+    "credits": "0.5",
+    "prerequisites": ["MAT102", ["MAT223", "MAT240"]]
+  },
+  {
+    "code": "MAT382",
+    "name": "Mathematics for Teachers",
+    "description": "The course discusses the Mathematics curriculum (K-12) from the following aspects: the strands of the curriculum and their place in the world of Mathematics, the nature of the proofs, applications of Mathematics, and the connection of Mathematics to other subjects. Restricted to students in the CSC/MAT/STA major and specialist programs.",
+    "credits": "0.5",
+    "prerequisites": [["MAT134", "MAT135", "MAT137"], "MAT102", ["MAT223", "MAT240"], "One additional 200+ Math course"]
+  },
+  {
+    "code": "MAT388",
+    "name": "Topics in Mathematics",
+    "description": "Introduction to a topic of current interest in mathematics. Content will vary from year to year.",
+    "credits": "0.5",
+    "prerequisites": ["Permission of Department", "Minimum 2.5 CGPA"]
+  },
+  {
+    "code": "MAT392",
+    "name": "Ideas of Mathematics",
+    "description": "This is a one-term course to give students extensive practice in the writing of mathematics. The format will be to study excellent expositions of important ideas of mathematics and then to assign short writing assignments based on them.",
+    "credits": "0.5",
+    "prerequisites": ["Completion of second-year requirements for Math Major/Specialist"]
+  },
+  {
+    "code": "MAT401",
+    "name": "Polynomial Equations and Fields",
+    "description": "Commutative rings; quotient rings. Construction of the rationals. Polynomial algebra. Fields and Galois theory: Field extentions, adjunction of roots of a polynomial. Constructibiliy, trisection of angles, construction of regular polygons. Galois groups of polynomials, in particular cubics, quartics. Insolvability of quintics by radicals. ",
+    "credits": "0.5",
+    "prerequisites": ["MAT102", ["MAT224", "MAT240"], ["MAT232", "MAT233", "MAT257"], "MAT301"]
+  },
+  {
+    "code": "MAT402",
+    "name": "Classical Geometries",
+    "description": "Euclidean and non-Euclidean plane and space geometries. Real and complex projective space. Models of the hyperbolic plane. Connections with the geometry of surfaces.",
+    "credits": "0.5",
+    "prerequisites": ["MAT102", ["MAT232", "MAT233", "MAT257"], ["MAT224", "MAT240"]]
+  },
+  {
+    "code": "MAT405",
+    "name": "Introduction to Topology",
+    "description": "Sets and functions; Topology in R^n; Topological spaces; Open and closed sets; Closure and interior; Continuous functions; Quotient spaces; Connectedness and compactness; Separation axioms and related theorems.",
+    "credits": "0.5",
+    "prerequisites": ["MAT102", ["MAT224", "MAT240"], ["MAT232", "MAT233", "MAT257"], "One 300+ Math course with a mark of 65%+"]
+  },
+  {
+    "code": "MAT406",
+    "name": "Mathematical Introduction to Game Theory",
+    "description": "Combinatorial games: Nim and other impartial games; Sprague-Grundy value; existence of a winning strategy in partisan games. Two-player (matrix) games: zero-sum games and Von-Neuman’s minimax theorem; general sum-matrix games, prisoner’s dilemma, Nash equilibrium, cooperative games, asymmetric information. Multi-player games: coalitions and the Shapley value. Possible additional topics: repeated (stochastic) games; auctions; voting schemes and Arrow’s paradox. Mathematical tools that may be introduced include hyperplane separation of convex sets and Brouwer’s fixed point theorem. Numerous examples will be analyzed in depth, to offer insight to the mathematical theory and its relation with real life situations.",
+    "credits": "0.5",
+    "prerequisites": ["MAT102", ["MAT223", "MAT240"], "STA256"]
+  },
+  {
+    "code": "MAT478",
+    "name": "Topics in Mathematics",
+    "description": "Introduction to a topic of current interest in mathematics. Content will vary from year to year. ",
+    "credits": "0.5",
+    "prerequisites": ["Permission of Department", "CGPA of 2.5+"]
+  },
+  {
+    "code": "MAT488",
+    "name": "Topics in Mathematics",
+    "description": "Introduction to a topic of current interest in mathematics. Content will vary from year to year. ",
+    "credits": "0.5",
+    "prerequisites": ["Permission of Department", "CGPA of 2.5+"]
+  },
+  {
+    "code": "MAT498",
+    "name": "Topics in Mathematics",
+    "description": "Introduction to a topic of current interest in mathematics. Content will vary from year to year. ",
+    "credits": "0.5",
+    "prerequisites": ["Permission of Department", "CGPA of 2.5+"]
+  },
+  {
+    "code": "MAT492",
+    "name": "Senior Thesis",
+    "description": "An exposition on a topic in mathematics written under the supervision of a faculty member. Open to students in Mathematical Sciences Specialist program.",
+    "credits": "0.5",
+    "prerequisites": ["MAT392", "2.0 credits of MAT 300 level courses", "Minimum 2.5 CGPA"]
+  },
+  {
+    "code": "STA107",
+    "name": "An Introduction to Probability and Modelling",
+    "description": "Introduction to the theory of probability, with emphasis on the construction of discrete probability models for applications. After this course, students are expected to understand the concept of randomness and aspects of its mathematical representation. Topics include random variables, Venn diagrams, discrete probability distributions, expectation and variance, independence, conditional probability, applications such as queues. ",
+    "credits": "0.5",
+    "prerequisites": []
+  },
+  {
+    "code": "STA215",
+    "name": "Introduction to Applied Statistics",
+    "description": "This course introduces the basic concepts, logic, and issues that form statistical reasoning. Topics include descriptive statistics, exploratory data analysis, elementary probability, sampling distributions, point and interval estimation, hypothesis testing for normal and binomial data, and regression analysis. ",
+    "credits": "0.5",
+    "prerequisites": []
+  },
+  {
+    "code": "STA256",
+    "name": "Probability and Statistics I",
+    "description": "This course covers probability including its role in statistical modeling. Topics include probability distributions, expectation, continuous and discrete random variables and vectors, distribution functions. Basic limiting results and the normal distribution presented with a view to their applications in statistics.",
+    "credits": "0.5",
+    "prerequisites": [["MAT134", "MAT135", "MAT137", "MAT157", "75%+ MAT133"]]
+  },
+  {
+    "code": "STA258",
+    "name": "Statistics with Applied Probability",
+    "description": "A survey of statistical methodology with emphasis on the relationship between data analysis and probability theory. Topics covered include descriptive statistics, limit theorems, sampling distribution, point and interval estimation both classical and bootstrap, hypothesis testing both classical and bootstrap, permutation tests, contingency tables and count data. A statistical computer package will be used.",
+    "credits": "0.5",
+    "prerequisites": ["STA256"]
+  },
+  {
+    "code": "STA260",
+    "name": "Probability and Statistics II",
+    "description": "A sequel to STA256H5 giving an introduction to current statistical theory and methodology. Topics include: estimation, testing, and confidence intervals; unbiasedness, sufficiency, likelihood; simple linear and generalized linear models.",
+    "credits": "0.5",
+    "prerequisites": [["STA256", "ECO227"]]
+  },
+  {
+    "code": "STA302",
+    "name": "Regression Analysis",
+    "description": "Analysis of the multiple regression model by least squares; statistical properties of the least square analysis, including estimation of error; residual and regression sums of squares; distribution theory under normality of the observations; confidence regions and intervals; tests for normality; variance stabilizing transformations, multicolinearity, variable search methods.",
+    "credits": "0.5",
+    "prerequisites": [["STA258", "STA221", "ECO220", "BIO360", "PSY202", "SOC350"], ["MAT223", "MAT240"],"STA260"]
+  },
+  {
+    "code": "STA304",
+    "name": "Surveys, Sampling and Observational Data",
+    "description": "The sample survey is a widely used technique for obtaining information about a large population at relatively small cost. Only probability samples can provide both an estimator and a measure of sampling error from the data itself. In addition to sampling error, non-sampling errors (refusals, not-at-home, lies, inaccuracies, etc.) are always present, and can produce serious biases.",
+    "credits": "0.5",
+    "prerequisites": [["STA107", "STA256", "ECO227"]]
+  },
+  {
+    "code": "STA305",
+    "name": "Experimental Design",
+    "description": "This course covers topics in the design and analysis of experiments. The topics covered include analysis of variance, randomization, confounding, block designs, factorial designs, orthogonal polynomials and response surface methods. Applications include agricultural experiments, laboratory experiments, and industrial experiments, including quality control techniques.",
+    "credits": "0.5",
+    "prerequisites": [["STA302", "STA331", "ECO375"]]
+  },
+  {
+    "code": "STA310",
+    "name": "Bayesian Statistics in Forensic Science",
+    "description": "An introduction to the principles and procedures of statistics for the forensic sciences. The course covers both classical and Bayesian methodologies. Topics from classical statistics include confidence intervals for means and proportions, hypothesis tests on means and proportions, introduction to ANOVA, introduction to regression, contingency tables, and logistic regression. Topics from Bayesian statistics include subjective probability, conditional probabilities, prior and posterior probabilities, empirical Bayes estimates. The course will use real life case studies to develop statistical methodologies. Statistical computing will be required.",
+    "credits": "0.5",
+    "prerequisites": [["STA215H5", "STA220H5", "STA256H5", "ECO220Y5", "ECO227Y5", "PSY201H5"]]
+  },
+  {
+    "code": "STA311",
+    "name": "Statistics for Forensic Sciences II",
+    "description": "A continuation of STA310H5. Topics from Bayesian statistics include conditional probabilities, estimation, likelihood ratios, prior and posterior probabilities and distributions. Applications to forensic sciences include propositions, relevant and irrelevant information, discriminating power, value of evidence, transfer evidence, introduction to fibre and DNA analysis. Statistical computing will be required.",
+    "credits": "0.5",
+    "prerequisites": [["MAT134Y5","MAT135Y5","MAT137Y5","MAT157Y5", "MAT233H5"],["STA310", "STA258","STA221", "ECO227", "BIO361", "PSY202"]]
+  },
+  {
+    "code": "STA312",
+    "name": "Topics in Statistics: Applied Statistical Modelling",
+    "description": "Introduction to a topic of current interest in statistics. Content will vary from year to year. Computer packages are used. ",
+    "credits": "0.5",
+    "prerequisites": ["Permission of Instructor"]
+  },
+  {
+    "code": "STA313",
+    "name": "Topics in Statistics: Applications of Statistical Models",
+    "description": "Introduction to a topic of current interest in statistics. Content will vary from year to year. Computer packages are used. ",
+    "credits": "0.5",
+    "prerequisites": ["Permission of Instructor"]
+  },
+  {
+    "code": "STA314",
+    "name": "Introduction to Statistical Learning",
+    "description": "A thorough introduction to the basic ideas in supervised statistical learning with a focus on regression and a brief introduction to classification. Methods covered will include multiple linear regression and its extensions, k-nn regression, variable selection and regularization via AIC,BIC, Ridge and lasso penalties, non-parametric methods including basis expansions, local regression and splines, generalized additive models, tree-based methods, bagging, boosting and random forests. Content will be discussed from a statistical angle, putting emphasis on uncertainty quantification and the impact of randomness in the data on the outcome of any learning procedure. A detailed discussion of the main statistical ideas behind crossvalidation, sample splitting and re-sampling methods will be given. Throughout the course, R will be used as software, a brief introduction will be given in the beginning.",
+    "credits": "0.5",
+    "prerequisites": [["MAT223", "MAT240"], ["STA258", "ECO327"], "STA260"]
+  },
+  {
+    "code": "STA315",
+    "name": "Advanced Statistical Learning",
+    "description": "The second part of the course will focus on basic ideas in classification problems including discriminant analysis and support vector machine, and unsupervised learning techniques such as clustering, principal component analysis, independent component analysis and multidimensional scaling. The course will also cover the modern statistics in the 'big data' area. The high dimensional problems when p » n and n » p will be introduced. In addition, the students will be formed as groups to do data analysis projects on statistical machine learning and present their findings in class. This will prepare them for future careers in industry or academia.",
+    "credits": "0.5",
+    "prerequisites": ["STA314", "Permission of Instructor"]
+  },
+  {
+    "code": "STA348",
+    "name": "Introduction to Stochastic Processes",
+    "description": "Discrete Markov chains with a finite number of states, random walks, single-server queues, continuous-time Markov chains, Poisson processes, branching processes, birth and death process, M/M/n queues, Monte-Carlo simulation may be introduced. ",
+    "credits": "0.5",
+    "prerequisites": [["STA260", "STA261"], ["MAT224", "MAT240"]]
+  },
+  {
+    "code": "STA378",
+    "name": "Research Project",
+    "description": "Research project. The project topic will vary from year to year. Interested students must consult with statistics faculty, at least two months prior to registration, to determine the project’s topic and scope. Enrolment by permission of instructor only.",
+    "credits": "0.5",
+    "prerequisites": ["Permission of Instructor", "Minimum 2.5 CGPA"]
+  },
+  {
+    "code": "STA388",
+    "name": "Topics in Statistics",
+    "description": "Introduction to a topic of current interest in statistics. Content will vary from year to year. Enrolment by permission of instructor only.",
+    "credits": "0.5",
+    "prerequisites": ["Permission of Instructor", "Minimum 2.5 CGPA"]
+  },
+  {
+    "code": "STA390",
+    "name": "Modern Applied Statistics",
+    "description": "Topics from modern statistics for applied sciences. May include: bootstrap estimation and testing, Monte Carlo simulation, Bayesian estimation and testing, empirical Bayes methods. Statistical computing will be required. ",
+    "credits": "0.5",
+    "prerequisites": ["STA256", ["MAT134", "MAT135", "MAT137", "MAT157", "MAT233"]]
+  },
+  {
+    "code": "STA399",
+    "name": "Research Opportunity Program",
+    "description": "This course provides a richly rewarding opportunity for students in their second year to work in the research project of a professor in return for 299Y course credit. Students enrolled have an opportunity to become involved in original research, learn research methods and share in the excitement and discovery of acquiring new knowledge. Participating faculty members post their project descriptions for the following summer and fall/winter sessions in early February and students are invited to apply in early March.",
+    "credits": "0.5",
+    "prerequisites": ["Permission of Department"]
+  },
+  {
+    "code": "STA413",
+    "name": "Estimation and Testing",
+    "description": "This course covers advanced topics in probability and mathematical statistics. Topics include convergence in probability, convergence in distribution, and convergence with probability one, sufficiency, completeness, Rao-Blackwell and Lehmann-Sheffe theorems, and asymptotics",
+    "credits": "0.5",
+    "prerequisites": [["STA260", "STA261"]]
+  },
+  {
+    "code": "STA431",
+    "name": "Structural Equation Models",
+    "description": "Random vectors and matrices, univariate and multivariate regression with measurement error, latent variables, model identification, the LISREL model, path analysis, confirmatory factor analysis, longitudinal data analysis, robustness of the normal model. A statistical computing package will be used. ",
+    "credits": "0.5",
+    "prerequisites": ["STA302"]
+  },
+  {
+    "code": "STA437",
+    "name": "FILLER",
+    "description": "Practical techniques for the analysis of multivariate data; fundamental methods of data reduction with an introduction to underlying distribution theory; basic estimation and hypothesis testing for multivariate means and variances; regression coefficients; principal components and the partial multiple and canonical correlations; multivariate analysis of variance; profile analysis and curve fitting for repeated measurements; classification and the linear discriminant function. There will be extensive use of statistical computing packages",
+    "credits": "0.5",
+    "prerequisites": [["STA302", "STA331", "ECO327"]]
+  },
+  {
+    "code": "STA441",
+    "name": "Methods of Applied Statistics",
+    "description": "Vocabulary of data analysis, Tests of statistical significance, Principles of research design, Introduction to unix and SAS, Applications of statistical methods such as Multiple regression, Factorial ANOVA, Mixed linear models, Multivariate analysis of variance, Repeated measures, Logistic regression, Generalized linear models, Permutation tests and Bootstrapping. ",
+    "credits": "0.5",
+    "prerequisites": [["STA302", "Permission of Instructor"]]
+  },
+  {
+    "code": "STA457",
+    "name": "Applied Time Series Analysis",
+    "description": "This course develops the theory and methodology for the statistical analysis of time series. The methods may be broadly characterized as time domain methods based on correlation (Box-Jenkins), or frequency domain methods based on a decomposition of the series into cycles (Fourier). The course develops both of these to the point where they may be applied using standard statistical software. Model identification, estimation and forecasting are discussed. Applications in social and physical sciences are used.",
+    "credits": "0.5",
+    "prerequisites": [["STA302", "STA331", "ECO227"]]
+  },
+  {
+    "code": "STA478",
+    "name": "Statistics Research Project",
+    "description": "Research project.The project topic will vary from year to year. Interested students must consult with statistics faculty, at least two months prior to registration, to determine the project’s topic and scope. Enrolment by permission of instructor only.",
+    "credits": "0.5",
+    "prerequisites": ["Permission of Department", "Minimum 2.5 CGPA"]
+  },
+  {
+    "code": "STA488",
+    "name": "Topics in Statistics",
+    "description": "Introduction to a topic of current interest in statistics. Content will vary from year to year. Enrolment by permission of instructor only.",
+    "credits": "0.5",
+    "prerequisites": ["Permission of Department", "Minimum 2.5 CGPA"]
+  }
+]
