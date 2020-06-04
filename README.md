@@ -1,6 +1,8 @@
 # MCSS-API
 An API that provides UTM'S MCSS program requirements and courses.
 
+Current domain: localhost:3001
+
 /api/programs
 
 Returns a list of all programs within the MCSS department at UTM.
