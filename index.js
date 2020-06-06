@@ -26,7 +26,6 @@ mongoose.connection.on("connected", () => {
   console.log("Connected to Mongoose Database");
 });
 
-// MONGODB_URI = "mongodb+srv://admin:zdzmvse43s@cluster0-30e8d.mongodb.net/UofTPlanner?retryWrites=true&w=majority"
 /*
 
   User MongoDB Atlas API to receive previous saved states
@@ -41,7 +40,7 @@ app.get("/user/:id", function (req, res) {
       if (user) {
         res.json(JSON.parse(user.prevState));
       } else {
-        res.json({});
+        res.json({ selectedPrograms: [] });
       }
     }
   });
