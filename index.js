@@ -89,7 +89,10 @@ app.post("/user/:id", function (req, res) {
   UTM MCSS Course and Program API GET requests
 
 */
-
+// GET Requests to receive all courses
+app.get("/courses", function (req, res) {
+  res.json(courses);
+});
 // GET Requests to receive all courses matching the code query
 app.get("/courses/:code", function (req, res) {
   let course_results = courses.filter((course) => {
