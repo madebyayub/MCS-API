@@ -33,7 +33,7 @@ mongoose.connection.on("connected", () => {
 
 */
 // GET Request to receive the previous state the user last saved.
-app.get("/api/user/:id", function (req, res) {
+app.get("/user/:id", function (req, res) {
   User.findOne({ userID: req.params.id }, function (err, user) {
     if (err) {
       res.json({ message: "GET - Error finding the userID provided" });
@@ -47,7 +47,7 @@ app.get("/api/user/:id", function (req, res) {
   });
 });
 // POST Request to save the state the user wishes to save
-app.post("/api/user/:id", function (req, res) {
+app.post("/user/:id", function (req, res) {
   const state = JSON.stringify(req.body.state);
   User.findOne({ userID: req.body.userID }, function (err, user) {
     if (err) {
@@ -91,7 +91,7 @@ app.post("/api/user/:id", function (req, res) {
 */
 
 // GET Requests to receive all courses matching the code query
-app.get("/api/courses/:code", function (req, res) {
+app.get("/courses/:code", function (req, res) {
   let course_results = courses.filter((course) => {
     const regex = new RegExp(`^${req.params.code}`, "gi");
     return course.code.match(regex);
@@ -99,11 +99,11 @@ app.get("/api/courses/:code", function (req, res) {
   res.json(course_results);
 });
 // GET Requests to receive all programs
-app.get("/api/programs", function (req, res) {
+app.get("/programs", function (req, res) {
   res.json(programs);
 });
 // GET Requests to receive all programs matching the program query
-app.get("/api/programs/:program", function (req, res) {
+app.get("/programs/:program", function (req, res) {
   let program_results = programs.filter((prog) => {
     const regex = new RegExp(`^${req.params.program}`, "gi");
     return prog.program.match(regex);
@@ -111,7 +111,7 @@ app.get("/api/programs/:program", function (req, res) {
   res.json(program_results);
 });
 // GET Requests to receive all first year courses required for the program given by code query
-app.get("/api/program/requirements/first/:code", function (req, res) {
+app.get("/program/requirements/first/:code", function (req, res) {
   let program = programs.filter((prog) => {
     const regex = new RegExp(`^${req.params.code}`, "gi");
     return prog.code.match(regex);
@@ -132,7 +132,7 @@ app.get("/api/program/requirements/first/:code", function (req, res) {
   }
 });
 // GET Requests to receive all second year courses required for the program given by code query
-app.get("/api/program/requirements/second/:code", function (req, res) {
+app.get("/program/requirements/second/:code", function (req, res) {
   let program = programs.filter((prog) => {
     const regex = new RegExp(`^${req.params.code}`, "gi");
     return prog.code.match(regex);
@@ -153,7 +153,7 @@ app.get("/api/program/requirements/second/:code", function (req, res) {
   }
 });
 // GET Requests to receive all third year courses required for the program given by code query
-app.get("/api/program/requirements/third/:code", function (req, res) {
+app.get("/program/requirements/third/:code", function (req, res) {
   let program = programs.filter((prog) => {
     const regex = new RegExp(`^${req.params.code}`, "gi");
     return prog.code.match(regex);
@@ -174,7 +174,7 @@ app.get("/api/program/requirements/third/:code", function (req, res) {
   }
 });
 // GET Requests to receive all fourth year courses required for the program given by code query
-app.get("/api/program/requirements/fourth/:code", function (req, res) {
+app.get("/program/requirements/fourth/:code", function (req, res) {
   let program = programs.filter((prog) => {
     const regex = new RegExp(`^${req.params.code}`, "gi");
     return prog.code.match(regex);
