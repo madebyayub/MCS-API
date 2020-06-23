@@ -329,7 +329,7 @@
     "prerequisites": ["CSC338", "CSC376", "MAT224"]
   },
   {
-    "code": "CSC476",
+    "code": "CSC477",
     "name": "Introduction to Mobile Robotics",
     "description": "An introduction to mobile robotic systems from a computational, as opposed to an electromechanical, perspective. Definitional problems in robotics and their solutions both in practice and by the research community. Topics include algorithms, probabilistic reasoning and modeling, optimization, inference mechanisms, and behavior strategies. ",     
     "credits": "0.5",
