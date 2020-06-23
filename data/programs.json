@@ -9,7 +9,7 @@
       "third": ["CSC343", "CSC363", "CSC369", "CSC373"],
       "fourth": [],
       "options": {
-        "first": [["MAT134", "MAT135 + 136", "MAT137", "MAT157"]],
+        "first": [["MAT132 + MAT134", "MAT135 + 136", "MAT137", "MAT157"]],
         "second": [["MAT223", "MAT240"], ["MAT232", "MAT257"]],
         "third": [["CSC358", "CSC458"], ["300/400 CSC Course (a)"], ["300/400 CSC Course (b)"]],
         "fourth": [["300/400 CSC Course (c)"], ["400 CSC Course (a)"], ["400 CSC Course (b)"]]
@@ -26,8 +26,8 @@
       "third": [],
       "fourth": [],
       "options": {
-        "first": [["MAT134", "MAT135 + 136", "MAT137", "MAT157"]],
-        "second": [["MAT223", "MAT240"]],
+        "first": [["MAT132 + MAT134", "MAT135 + 136", "MAT137", "MAT157"]],
+        "second": [["MAT223", "MAT240"],["Two of CSC209, CSC258, CSC263"]],
         "third": [["300/400 CSC Course (a)"], ["300/400 CSC Course (b)"]],
         "fourth": [["300/400 CSC Course (c)"], ["300/400 CSC Course (d)"]]
       }
@@ -61,7 +61,7 @@
       "fourth": ["MAT402"],
       "options": {
         "first": [["MAT137", "MAT157"]],
-        "second": [["STA258", "STA260"], ["MAT232/MAT233/MAT236/MAT257"]],
+        "second": [["STA258", "STA260"], ["((MAT232/MAT233), MAT236) / MAT257"], ["CSC207/CSC209/CSC236"]],
         "third": [["MAT337", "MAT378"], ["MAT302", "MAT315"], ["300/400 CSC/MAT/STA Course (a)"]],
         "fourth": [["400 MAT Course (a)"], ["1.0 from MAT302/MAT309/MAT315/MAT332/MAT344"], ["300/400 CSC/MAT/STA Course (a)"],["300/400 CSC/MAT/STA Course (b)"]]
       }
@@ -77,10 +77,10 @@
       "third": ["MAT301", "MAT334"],
       "fourth": ["MAT402"],
       "options": {
-        "first": [["MAT134", "MAT135 + 136","MAT137", "MAT157"], ["MAT223", "MAT240"]],
+        "first": [["MAT132 + MAT134", "MAT135 + 136","MAT137", "MAT157"], ["MAT223", "MAT240"]],
         "second": [["MAT224", "MAT247"], ["MAT232", "MAT233", "MAT257"]],
         "third": [["300 MAT Course (a)", "STA256"], ["MAT337", "MAT378", "MAT392", "MAT405"]],
-        "fourth": [["MAT236", "MAT311", "MAT332"], ["MAT302", "MAT315", "MAT334"]]
+        "fourth": [["MAT236", "MAT311", "MAT332", "MAT257"], ["MAT302", "MAT315", "MAT344"]]
       }
     }
   },
@@ -94,9 +94,9 @@
       "third": [],
       "fourth": [],
       "options": {
-        "first": [["MAT134", "MAT135 + 136","MAT137", "MAT157"]],
+        "first": [["MAT132 + MAT134", "MAT135 + 136","MAT137", "MAT157"]],
         "second": [["MAT223", "MAT240"]],
-        "third": [["300/400 MAT Course (a)"], ["MAT232", "MAT224", "MAT240", "MAT244", "MAT247"]],
+        "third": [["300/400 MAT Course (a)"], ["MAT232", "MAT224", "MAT240", "MAT244", "MAT247", "MAT257"]],
         "fourth": [["300/400 MAT Course (b)"], ["200/300/400 MAT Course (a)"]]
       }
     }
@@ -111,10 +111,10 @@
       "third": ["STA302", "STA304", "STA305", "STA348"],
       "fourth": [],
       "options": {
-        "first":[["MAT134", "MAT135 + 136", "MAT137", "MAT157"], ["MAT223", "MAT240"]],
+        "first":[["MAT132 + MAT134", "MAT135 + 136", "MAT137", "MAT157"], ["MAT223", "MAT240"]],
         "second":[["MAT232", "MAT233", "MAT257"], ["MAT212", "MAT244"]],
         "third":[["2.0 credits from STA312/STA313/STA314/STA315/STA413/ STA431/STA437/STA441/STA457"]],
-        "fourth":[["2.0 credits from CSC322/CSC411/MAT302/MAT311/MAT332/ MAT334/MAT344/MAT337"], ["100+ STA Course (a)"], ["100+ STA Course (b)"]]
+        "fourth":[["2.0 credits from CSC322/CSC411/MAT302/MAT311/MAT332/ MAT334/MAT344/MAT337/MAT378"], ["100+ STA Course (a)"], ["100+ STA Course (b)"]]
       }
     }
   },
@@ -128,7 +128,7 @@
       "third": ["STA302", "STA304", "STA305"],
       "fourth": [],
       "options": {
-        "first":[["MAT134", "MAT135 + 136", "MAT137", "MAT157"], ["MAT223", "MAT240"]],
+        "first":[["MAT132 + MAT134", "MAT135 + 136", "MAT137", "MAT157"], ["MAT223", "MAT240"]],
         "second":[["MAT232", "MAT233", "MAT257"]],
         "third":[],
         "fourth":[["1.0 credits from STA310/STA312/STA313/STA314/STA315/ STA348/STA413/STA431/STA437/STA441/ STA457/CSC322/CSC411/MAT302/MAT311/ MAT332/MAT334/MAT337/MAT378"]]
@@ -145,7 +145,7 @@
       "third": [],
       "fourth": [],
       "options": {
-        "first":[["MAT133", "MAT134", "MAT135 + 136", "MAT137", "MAT157"]],
+        "first":[["MAT133", "MAT132 + MAT134", "MAT135 + 136", "MAT137", "MAT157"]],
         "second":[["MAT232", "MAT233", "MAT257"]],
         "third":[["100+ STA Course (a)"], ["100+ STA Course (b)"]],
         "fourth":[["300/400 STA Course (a)"], ["300/400 STA Course (b)"]]
