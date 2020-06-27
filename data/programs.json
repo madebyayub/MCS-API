@@ -96,7 +96,7 @@
       "options": {
         "first": [["MAT132 + MAT134", "MAT135 + 136","MAT137", "MAT157"]],
         "second": [["MAT223", "MAT240"]],
-        "third": [["300/400 MAT Course (a)"], ["MAT232", "MAT224", "MAT240", "MAT244", "MAT247", "MAT257"]],
+        "third": [["300/400 MAT Course (a)"], ["MAT232/MAT224/MAT240/MAT244 /MAT247/MAT257"]],
         "fourth": [["300/400 MAT Course (b)"], ["200/300/400 MAT Course (a)"]]
       }
     }
