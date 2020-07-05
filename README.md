@@ -1,4 +1,4 @@
-# MCSS-API
+# MCS-API
 An API that provides UTM'S MCSS program requirements and courses.
 
 Current domain: api.uoftplanner.com
