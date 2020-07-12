@@ -12,7 +12,7 @@ var express = require("express"),
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "http://www.uoftplanner.com",
   })
 );
 app.use(bp.json());
