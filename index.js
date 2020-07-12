@@ -52,50 +52,59 @@ app.get("/user/:id", function (req, res) {
 // POST Request to save the state the user wishes to save
 app.post("/user/:id", function (req, res) {
   if (
+    req.body.state &&
+    req.body.userID &&
     "selectedPrograms" in req.body.state &&
     "programRequirements" in req.body.state
   ) {
-    const state = JSON.stringify(req.body.state);
+    if (
+      typeof req.body.state.selectedPrograms === "object" &&
+      typeof req.body.state.programRequirements === "object"
+    ) {
+      const state = JSON.stringify(req.body.state);
 
-    User.findOne({ userID: req.body.userID }, function (err, user) {
-      if (err) {
-        res.json({ reponse: "POST- Error finding the userID provided" });
-      } else {
-        if (!user) {
-          const newUser = new User({
-            userID: req.body.userID,
-            prevState: state,
-          });
-          newUser.save((error) => {
-            if (!error) {
-              res.json({
-                reponse:
-                  "Successfully saved new user with their previous state",
-              });
-            } else {
-              res.json({
-                reponse: "Error saving the new user's previous state",
-              });
-            }
-          });
+      User.findOne({ userID: req.body.userID }, function (err, user) {
+        if (err) {
+          res.json({ reponse: "POST- Error finding the userID provided" });
         } else {
-          user.prevState = state;
-          user.userID = req.body.userID;
-          user.save((error) => {
-            if (!error) {
-              res.json({
-                reponse:
-                  "Successfully saved an existing user with their previous state",
-              });
-            } else {
-              res.json({
-                reponse: "Error saving the existing user's previous state",
-              });
-            }
-          });
+          if (!user) {
+            const newUser = new User({
+              userID: req.body.userID,
+              prevState: state,
+            });
+            newUser.save((error) => {
+              if (!error) {
+                res.json({
+                  reponse:
+                    "Successfully saved new user with their previous state",
+                });
+              } else {
+                res.json({
+                  reponse: "Error saving the new user's previous state",
+                });
+              }
+            });
+          } else {
+            user.prevState = state;
+            user.userID = req.body.userID;
+            user.save((error) => {
+              if (!error) {
+                res.json({
+                  reponse:
+                    "Successfully saved an existing user with their previous state",
+                });
+              } else {
+                res.json({
+                  reponse: "Error saving the existing user's previous state",
+                });
+              }
+            });
+          }
         }
-      }
-    });
+      });
+    } else {
+      res.sendStatus(403);
+    }
   } else {
     res.sendStatus(403);
   }
