@@ -10,7 +10,11 @@ var express = require("express"),
   programs = require("./data/programs.json"),
   User = require("./models/User");
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://uoftplanner.com",
+  })
+);
 app.use(bp.json());
 app.use(bp.urlencoded({ extended: true }));
 
